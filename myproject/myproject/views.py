@@ -63,9 +63,11 @@ def signup_view(request) :
 
 def login_view(request) :
     response_data = {}
-    if request.method == 'GET' :#display form
-        template='login.html'    #it will redirect to login page
-        form = LoginForm()       #object
+    if request.method == 'GET' :
+        #display form
+           #it will redirect to login page
+        form = LoginForm()
+        template='login.html'  #object
 
 
     elif request.method =='POST' :
